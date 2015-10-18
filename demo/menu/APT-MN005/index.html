@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Skeleton</title>
+	<link rel="stylesheet" href="../../../bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		* { margin:0; padding:0; text-align:center;box-sizing: border-box;}
+		.block { background: #fff; border-bottom: 1px solid #ddd; margin-top: 30px; }
+		.widget {
+			height: 200px;
+			background: #fff;
+			border-bottom: 1px solid #ddd;
+			line-height: 200px;
+			margin: 30px 0 0 0;
+			position: relative;
+		}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body style="background-image:url(bg.jpg); font-family:Arial; color:#888;">
+	<div class="container">
+		<header style="height:200px; line-height:200px; margin-top:0; border: none;"><h1>HEADER</h1></header>
+		<nav>
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a href="#">
+						<img src="images/2.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">About me</span>
+							<span class="sdt_descr">Get to know me</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/1.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Portfolio</span>
+							<span class="sdt_descr">My work</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+						<a href="#">Websites</a>
+						<a href="#">Illustrations</a>
+						<a href="#">Photography</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/3.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Inspiration</span>
+							<span class="sdt_descr">Where ideas get born</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/4.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Photos</span>
+							<span class="sdt_descr">I like to photograph</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/5.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Blog</span>
+							<span class="sdt_descr">I write about design</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/6.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Projects</span>
+							<span class="sdt_descr">I like to code</span>
+						</span>
+					</a>
+					<div class="sdt_box">
+						<a href="#">Job Board Website</a>
+						<a href="#">Shopping Cart</a>
+						<a href="#">Interactive Maps</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div class="row">
+			<div class="col-md-8">
+				<article class="block" style="height: 500px;line-height: 500px;"><h1>POST</h1></article>
+				<div class="col-md-12">
+					<div class="row block">
+						<div class="col-md-6" style="padding: 20px 0; border-right:1px solid #ddd;"><h3>Previous Post</h3></div>
+						<div class="col-md-6" style="padding: 20px 0;"><h3>Next Post</h3></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3"><div class="block" style="height:200px;line-height:200px;"><h1>POST</h1></div></div>
+					<div class="col-md-3"><div class="block" style="height:200px;line-height:200px;"><h1>POST</h1></div></div>
+					<div class="col-md-3"><div class="block" style="height:200px;line-height:200px;"><h1>POST</h1></div></div>
+					<div class="col-md-3"><div class="block" style="height:200px;line-height:200px;"><h1>POST</h1></div></div>
+				</div>
+				<div class="block" style="height:200px; line-height:200px;"><h1>About Author</h1></div>
+				<div class="block" style="height:200px; line-height:200px;"><h1>Comment</h1></div>
+			</div>
+			<aside class="col-md-4">
+				<div class="widget"><h1>WIDGET</h1></div>
+				<div class="widget"><h1>WIDGET</h1></div>
+				<div class="widget"><h1>WIDGET</h1></div>
+				<div class="widget"><h1>WIDGET</h1></div>
+				<div class="widget"><h1>WIDGET</h1></div>
+			</aside>
+		</div>
+	</div>
+	<footer style="height:100px; margin: 30px 0 0 0; background-color:#fff; line-height:100px;"><h1>FOOTER</h1></footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Global style */
+body { font-family: Arial; line-height: 1.2; }
+a { color: #888; text-decoration: none; }
+/* Post style */
+.post { color: rgb(85, 85, 85); position: relative; width: 100%;   margin: 0px 0px 30px;  margin-bottom: 15px; background-color: white; }
+.post .post-link { display: block; width: 100%; height: 100%; position: absolute;z-index: 3;left: 0px;top: 0px;}
+.post .post-ftimg { background-size: cover; background-position: center; transition: all 0.4s ease-in-out 0s; height: 270px; position: relative;z-index: 1;}
+.post .post-content { color: #777; position: relative; z-index: 2; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;    padding: 10px 20px 60px; height: 250px;}
+.post .post-content .post-title { color: rgb(169, 169, 169); font-size: 2em; line-height: 1.2; margin: 0px 0px 15px; }
+.post .post-content .post-title a { color: #777; text-decoration: none;   transition: all 0.2s ease-in-out 0s; }
+.post .post-content .post-meta { height: 13px; width: 480px; font-size: 0.8em; line-height: 1.2; margin: 0 0 20px; padding: 0; }
+.post .post-content .post-meta li { margin: 0 15px 0 0; padding: 0; list-style: none; display: inline-block }
+.post .post-content .post-excerpt {  font-size: 1em; line-height: 1.2; margin: 0 0 15px 0; }
+.post, .post-style-2 .post, .post-style-3 .post { transition: box-shadow 0.3s ease; box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); }
+.post-ftimg:before { content: ''; display: block; position: absolute; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; bottom: 0px; right: 0px; z-index: 1; transition: background-color 0.3s ease; }
+.post-ftimg:after { content: '\f002'; font-family: FontAwesome; color: white; display: inline-block; position: absolute; top: calc(50% - 70px); left: calc(50% - 70px); width: 90px; text-align: center; height: 90px; font-size: 60px; line-height: 80px; padding: 15px; border-radius: 70px; border: 10px solid white; opacity: 0; margin-top: 30px; transition: all 0.3s ease; z-index: 2; }
+.post:hover .post-readmore { outline: 1px solid #5E5E5E; }
+.post:hover .post-readmore span { color: #fff; }
+.post:hover .post-readmore:after { transform: scale(1); }
+.post:hover .post-ftimg:before { background-color: rgba(0, 0, 0, 0.5) }
+.post:hover .post-ftimg:after { opacity: 1; margin-top: 0px; }
+.post:hover { box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.4); }
+.post:hover .post-title a { color: #444; }
+.post .post-readmore { display: block; padding: 0 10px; background-color: #444; outline: 0px solid black; color: #ddd; position: absolute; overflow: hidden; right: 15px;bottom: 15px;}
+.post .post-readmore span { z-index: 2; position: relative; line-height: 1.6;}
+.post .post-readmore:after { content: ''; display: block; position: absolute; width: 150px; height: 150px; background-color: #999; left: calc(50% - 75px); top: calc(50% - 75px); border-radius: 80px; z-index: 1; transition: transform 0.2s ease; transform: scale(0); }
+.post .post-readmore:before { content: ''; display: block; position: absolute; width: 150%; height: 50px; top: -20px; left: 100%; transform: rotate(40deg); background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 50%, rgba(0, 0, 0, 0.4) 100%); z-index: 2; transition: left 0.3s ease 0.5s; }
+.post:hover .post-readmore:before { left: 0%; }

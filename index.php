@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>WordPress Tool Library</title>
-    <link rel="stylesheet" type="te.." href="<?php echo get_template_directory_uri() ../bootstrap.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
     <style>
         * { margin:0; padding:0; text-align:center; box-sizing:border-box;}
         .block { background: #fff; border-bottom: 1px solid #ddd; margin-top: 30px; }
@@ -25,5 +26,10 @@
             <div class="col-md-4"><article class="block"><a href="<?php echo get_template_directory_uri() ?>/demo/skeleton-index.html"><h2>Loading</h2></a></article></div>
         </div>
     </div>
+    <footer id="footer">
+        <div style="width: 33.33%">
+            <?php dynamic_sidebar( 'footer-1' ); ?>
+        </div>
+    </footer>
 </body>
 </html>

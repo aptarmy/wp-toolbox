@@ -1,0 +1,19 @@
+# clear unecessary CSS
+(perspective-origin:.*)|(border.*0px.*)|(transform-origin:.*)|(outline:.*(0px|none).*)|(list-style:.*(0px|none).*)|(text-rendering:.*)
+
+# remove new line
+(\s|\t)*\n(\s|\t)*$
+
+# font
+font: .* (\d*\.?\d+px) / (\d*\.?\d+px) .*
+font-size: $1;\n\tline-height: $2;
+
+# remove comment
+\/\*.*\*\/
+
+# Clear Class
+\s+class="[^"]*"
+
+# replace id attribute with class
+id="([^"]*)"
+class="$1"
