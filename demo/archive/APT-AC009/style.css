@@ -1,0 +1,14 @@
+.slider { margin: 0; padding: 0; }
+.slider:before, .slider:after { content: ' '; display: table; clear: both; }
+.post { box-sizing: border-box; display: block; float: left; height: 388px; min-height: 1px; position: relative; text-rendering: optimizeLegibility; width: 451px; font-size: 13px; overflow: hidden; transition: all 0.5s ease 0s; font-family: Arial; }
+.post-img { background-position: center; display: block; height: 100%; left: 0px; position: absolute; right: 0px; =:left; top: 0px; width: 100%; z-index: 0; background-size: cover; transition: all 0.3s ease; }
+.post-img:before { bottom: 0px; box-sizing: border-box; display: block; height: 100%; position: absolute; width: 100%; z-index: 1; content: ''; background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%); transition: background 0.2s ease; }
+.post-content { bottom: 0px; box-sizing: border-box; height: 190px; position: absolute; width: 100%; z-index: 3; pointer-events: none; }
+.post-ctgr { box-sizing: border-box; color: rgb(255, 255, 255); pointer-events: none; text-align: center; text-rendering: optimizeLegibility; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; font-size: 13px; line-height: 24px; }
+.post-ctgr a { box-sizing: border-box; color: rgb(255, 255, 255); display: inline-block; text-align: center; text-decoration: none; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; text-transform: uppercase; background: rgba(0, 0, 0, 0.701961) none repeat scroll 0% 0% / auto padding-box border-box; border-radius: 3px 3px 3px 3px; font-size: 11px; line-height: 14px; margin: 0px 3px 5px; padding: 4px 7px 3px; transition: all 0.2s ease-in-out 0s; }
+.post-title { box-sizing: border-box; color: rgb(255, 255, 255); height: 84px; pointer-events: none; text-align: center; text-rendering: optimizeLegibility; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; width: 70%; font-size: 24px; line-height: 28px; margin: 10px auto; }
+.post-title a { box-sizing: border-box; color: rgb(255, 255, 255); pointer-events: none; text-align: center; text-decoration: none; text-rendering: optimizeLegibility; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; font-size: 24px; line-height: 28px; transition: all 0.2s ease-in-out 0s; }
+.meta-date { box-sizing: border-box; color: rgb(255, 255, 255); pointer-events: none; text-align: center; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; width: 100%; font-size: 13px; line-height: 24px; }
+.post:hover .post-img:before { background-color: rgba(0, 0, 0, 0.5); }
+.post:hover .post-img { transform: scale(1.05); }
+.post:hover .post-ctgr a { background-color: #95B16B; }
