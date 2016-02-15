@@ -1,0 +1,28 @@
+body {
+	background-color: white;
+}
+
+/* Loader */
+.btLoader {
+  margin: 30px auto 30px auto;
+  position: relative;
+  border: 5px solid rgba(128, 128, 128, 0.1);
+  border-right: 5px solid rgba(128, 128, 128, 0.3);
+  animation: btLoader 1.1s infinite linear;
+}
+ 
+.btLoader,
+.btLoader:after {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+@keyframes btLoader {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(359deg);
+  }
+}
