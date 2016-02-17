@@ -1,7 +1,7 @@
 .slider { margin: 0; padding: 0; }
 .slider:before, .slider:after { content: ' '; display: table; clear: both; }
 .post { box-sizing: border-box; display: block; float: left; height: 388px; min-height: 1px; position: relative; text-rendering: optimizeLegibility; width: 451px; font-size: 13px; overflow: hidden; transition: all 0.5s ease 0s; font-family: Arial; }
-.post-img { background-position: center; display: block; height: 100%; left: 0px; position: absolute; right: 0px; =:left; top: 0px; width: 100%; z-index: 0; background-size: cover; transition: all 0.3s ease; }
+.post-img { background-position: center; display: block; height: 100%; left: 0px; position: absolute; right: 0px; top: 0px; width: 100%; z-index: 0; background-size: cover; transition: all 0.3s ease; }
 .post-img:before { bottom: 0px; box-sizing: border-box; display: block; height: 100%; position: absolute; width: 100%; z-index: 1; content: ''; background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%); transition: background 0.2s ease; }
 .post-content { bottom: 0px; box-sizing: border-box; height: 190px; position: absolute; width: 100%; z-index: 3; pointer-events: none; }
 .post-ctgr { box-sizing: border-box; color: rgb(255, 255, 255); pointer-events: none; text-align: center; text-rendering: optimizeLegibility; text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px; font-size: 13px; line-height: 24px; }

@@ -14,7 +14,7 @@
 </head>
 <body style="background-color: #f1f1f1;font-family:Arial; color:#888;">
     <div class="container">
-        <h1 style="text-aligncenter; margin-top: 30px;">WordPress Theme Library</h1>
+        <h1 style="text-align:center; margin-top: 30px;">WordPress Theme Library</h1>
         <div class="row">
             <div class="col-md-4"><article class="block"><a href="<?php echo get_template_directory_uri() ?>/demo/skeleton-index.html"><h2>Menu</h2></a></article></div>
             <div class="col-md-4"><article class="block"><a href="<?php echo get_template_directory_uri() ?>/demo/skeleton-index.html"><h2>Slider</h2></a></article></div>
